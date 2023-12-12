@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+.container {
+    padding-left: 300px;
+    padding-top: 40px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.main-nav {
+    text-align: center;
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 240px;
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #3b3969;
+    box-shadow: 4px 4px 8px 0 rgba(34, 60, 80, 0.2);
+}
+.main-nav li{
+    height: 45px;
+    list-style-type: none;
+    transition: 0.2s;
+}
+.main-nav li a{
+    color:rgb(255, 255, 255);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.main-nav li:hover {
+    transform: scale(1.2);
+}
+.logo {
+    width: 200px;
+    margin-bottom: 40px;
+}
+
+header{
+    padding-left: 270px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+    background-color: rgb(255, 220, 125);
+    height: 40px;
+}
+button{
+    background-color:rgb(255, 220, 125);
+    font-size: 20px;
+    color: #3b3969;
+    padding: 5px 10px 10px 10px;
+    border-radius: 10px;
+    border: none;
+}
+.plus{
+    font-weight: 900;
+    font-size: 28px;
+    margin-right: 7px;
+}
