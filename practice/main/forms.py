@@ -7,9 +7,9 @@ class PosForm(ModelForm):
         model = Position
         fields = ["name", "type", "gramm", "sostav", "price"]
         widgets = {
-            "name": TextInput(attrs={'placeholder': 'Название'}),
-            "type": TextInput(attrs={'placeholder': 'Тип'}),
-            "gramm": TextInput(attrs={'placeholder': 'Граммы'}),
-            "sostav":Textarea(attrs={'placeholder': 'Описание'}),
-            "price": TextInput(attrs={'placeholder': 'Цена в руб.'}),
+            "name": TextInput(attrs={'placeholder': 'Название','class': 'form-input'}),
+            "type": TextInput(attrs={'placeholder': 'Тип','class': 'form-input'}),
+            "gramm": TextInput(attrs={'placeholder': 'Граммы','class': 'form-input'}),
+            "sostav":Textarea(attrs={'placeholder': 'Описание','class': 'form-input'}),
+            "price": TextInput(attrs={'placeholder': 'Цена в руб.','class': 'form-input'}),
         }
