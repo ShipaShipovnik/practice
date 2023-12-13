@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <title>{% block title %}{% endblock %}</title>
-    <link rel="stylesheet" href="{% static 'css/styles.css'%}" type="text/css">
+    <link rel="stylesheet" href="{% static 'css/styles.css'%}?20181209" type="text/css">
 </head>
 <body>
 <header>
@@ -18,7 +18,7 @@
         <li><a href="{% url 'about'%}">О кафе</a></li>
         <li><a href="{% url 'service'%}">Обслуживание</a></li>
     </nav>
-    <button class="add"><span class="plus">+</span>Добавить позицию</button>
+    <a class="addlink" href="{% url 'add'%}"><span class="plus">+</span>Добавить позицию</a>
 </div>
 <div class="container">{% block content%} {% endblock %}</div>
 </body>

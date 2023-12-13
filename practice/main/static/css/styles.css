@@ -54,16 +54,27 @@ header{
     background-color: rgb(255, 220, 125);
     height: 40px;
 }
-button{
+.addlink{
     background-color:rgb(255, 220, 125);
     font-size: 20px;
     color: #3b3969;
     padding: 5px 10px 10px 10px;
     border-radius: 10px;
     border: none;
+    text-decoration:none;
 }
 .plus{
     font-weight: 900;
     font-size: 28px;
     margin-right: 7px;
+}
+
+table{
+    width: 100%;
+}
+th{
+    background-color: #f0a2df;
+}
+td{
+    padding: 5px 0;
 }

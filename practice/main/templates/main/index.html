@@ -1,7 +1,31 @@
 {% extends 'main/base.html' %}
 
-{% block title%}Главная{% endblock %}
+{% block title%}
+{{ title }}
+{% endblock %}
 {% block tab-name %}Главная{% endblock %}
 {% block content%}
-<p>lorem lorem lorem</p>
+<h1>Меню</h1>
+{% if positions %}
+<table>
+    <tr>
+        <th>Название</th>
+        <th>Тип</th>
+        <th>Граммы</th>
+        <th>Описание</th>
+        <th>Цена</th>
+    </tr>
+    {% for el in positions %}
+    <tr>
+        <td>{{el.name}}</td>
+        <td>{{el.type}}</td>
+        <td>{{el.gramm}}</td>
+        <td>{{el.sostav}}</td>
+        <td>{{el.price}}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% else %}
+<p>У нас нет позиций в меню</p>
+{%endif%}
 {% endblock %}
