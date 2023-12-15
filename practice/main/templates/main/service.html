@@ -1,8 +1,10 @@
 {% extends 'main/base.html' %}
+{% load static %}
 
 {% block title%}Обслуживание{% endblock %}
 {% block tab-name %}Обслуживание{% endblock %}
 {% block content%}
 <p>Кафе работает по системе кассового обслуживания. Покупатели выбирают позицию из меню или расположеную ан ветрине, а
     после делают заказ на кассе. Оплата происходит сразу после получения заказаной позиции.</p>
+<img src="{% static 'img/cafe2.jpg' %}" alt="cafe" class="subimg">
 {% endblock %}

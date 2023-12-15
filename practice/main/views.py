@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect
 from .models import Position
 from .forms import PosForm
+from django.views.generic import DeleteView, UpdateView
 
 
 def index(request):
@@ -30,3 +31,14 @@ def add(request):
         'form': form
     }
     return render(request, 'main/add.html', context)
+
+class Delete(DeleteView):
+    model = Position
+    success_url = '/'
+    template_name = 'main/delete.html'
+
+class Update(UpdateView):
+    model = Position
+    template_name = 'main/add.html'
+    form_class = PosForm
+    success_url = '/'

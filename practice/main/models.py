@@ -6,7 +6,7 @@ class Position(models.Model):
     type = models.CharField('Тип', max_length=30)
     gramm = models.CharField('Граммовка порции', max_length=10)
     sostav = models.TextField('Описание')
-    price = models.CharField('Цена', max_length=10)
+    price = models.IntegerField('Цена')
 
     def __str__(self):
         return self.name
