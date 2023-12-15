@@ -79,7 +79,7 @@ td{
     padding: 5px 0;
 }
 
-form{
+.add-form{
     width: 400px;
     background-color: #3b3969;
     padding: 30px 15px;
@@ -109,4 +109,36 @@ h1{
 .subimg{
     margin: 20px 15%;
     width: 70%;
+}
+
+
+.filter{
+    width: 100%;
+    border-radius: 5px;
+}
+.filter__input{
+    height: 85px;
+    width: 100%;
+    background-color: #f0a2df;
+    padding: 10px 10px;
+}
+.filter .filter__input label{
+    font-size: 16px;
+    padding-right: 24px;
+}
+
+.filter .filter__input input,
+.filter .filter__input button{
+    width: 200px;
+    height: 25px;
+    border-radius: 5px;
+    margin-right: 31px;
+    border: none;
+}
+
+.filter .filter__input button{
+    border-radius: 4px;
+    color: black;
+    border: none;
+    font-size: 12px;
 }
