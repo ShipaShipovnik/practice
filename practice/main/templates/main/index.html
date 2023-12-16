@@ -7,17 +7,13 @@
 {% block content%}
 <h1>Меню</h1>
 {% if positions %}
-<div class="filter">
-            <form action="" class="filter__input">
-                <label for="">По названию</label>
-                <input type="text" value="">
-                <label for="">По типу</label>
-                <input type="text" value="">
-                <label for="">По цене:</label>
-                <input type="text" value="">
-                <button>Фильтровать</button>
-            </form>
+    <form method="get" class="form-filter">
+        <div>
+        Название: {{ positions.form.name }}
+        {{ positions.form.type }}
+        <button type="submit" class="btn btn-primary">Фильтровать</button>
         </div>
+    </form>
 <table>
     <tr>
         <th>Название</th>
@@ -27,7 +23,7 @@
         <th>Цена</th>
         <th>Действия</th>
     </tr>
-    {% for el in positions %}
+    {% for el in positions.qs %}
     <tr>
         <td>{{el.name}}</td>
         <td>{{el.type}}</td>

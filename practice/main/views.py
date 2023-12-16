@@ -2,10 +2,12 @@ from django.shortcuts import render, redirect
 from .models import Position
 from .forms import PosForm
 from django.views.generic import DeleteView, UpdateView
+from .filters import PostFilter
 
 
 def index(request):
-    positions = Position.objects.all()
+    positions_all = Position.objects.all()
+    positions = PostFilter(request.GET, queryset=positions_all)
     return render(request, 'main/index.html', {'title': 'Главная страница сайта', 'positions': positions})
 
 
@@ -32,10 +34,12 @@ def add(request):
     }
     return render(request, 'main/add.html', context)
 
+
 class Delete(DeleteView):
     model = Position
     success_url = '/'
     template_name = 'main/delete.html'
+
 
 class Update(UpdateView):
     model = Position
