@@ -8,9 +8,12 @@
 <h1>Меню</h1>
 {% if positions %}
     <form method="get" class="form-filter">
-        <div>
+        <div class="form-filter__inputs">
         Название: {{ positions.form.name }}
-        {{ positions.form.type }}
+        Тип: {{ positions.form.type }}
+        Вес(граммы): {{ positions.form.gramm }}
+        Описание: {{ positions.form.sostav }}
+        Цена: {{ positions.form.price }}
         <button type="submit" class="btn btn-primary">Фильтровать</button>
         </div>
     </form>

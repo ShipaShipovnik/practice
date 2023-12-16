@@ -110,35 +110,19 @@ h1{
     margin: 20px 15%;
     width: 70%;
 }
-
-
-.filter{
-    width: 100%;
-    border-radius: 5px;
-}
-.filter__input{
-    height: 85px;
-    width: 100%;
-    background-color: #f0a2df;
-    padding: 10px 10px;
-}
-.filter .filter__input label{
-    font-size: 16px;
-    padding-right: 24px;
-}
-
-.filter .filter__input input,
-.filter .filter__input button{
+.form-filter .form-filter__inputs input{
     width: 200px;
     height: 25px;
     border-radius: 5px;
     margin-right: 31px;
     border: none;
 }
-
-.filter .filter__input button{
-    border-radius: 4px;
-    color: black;
-    border: none;
-    font-size: 12px;
+.form-filter{
+    margin-bottom: 30px;
+    padding-top:30px;
+    text-align:center;
+    background-color: #f0a2df;
+    height:120px;
+    width: 100%;
+    background-color:
 }
